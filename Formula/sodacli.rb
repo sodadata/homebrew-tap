@@ -5,21 +5,21 @@
 class Sodacli < Formula
   desc "Soda CLI — data quality from the command line"
   homepage "https://github.com/sodadata/soda-cli"
-  version "0.2.0"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sodadata/soda-cli/releases/download/v0.2.0/sodacli_0.2.0_darwin_amd64.tar.gz"
-      sha256 "32ba7f57a9dcbfa6f4ce8d7d4a09a86a71ad807f68e8b053637121c25e225db5"
+      url "https://github.com/sodadata/soda-cli/releases/download/v0.3.0/sodacli_0.3.0_darwin_amd64.tar.gz"
+      sha256 "24850e849eda41d165bcce07a4c5bcc79175abccd0deea87159d56079d40d56d"
 
       define_method(:install) do
         bin.install "sodacli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sodadata/soda-cli/releases/download/v0.2.0/sodacli_0.2.0_darwin_arm64.tar.gz"
-      sha256 "a667f82b57e9a5c34346bbe9c36f8bc3e603025eecd12d8f18ac59047546bd1f"
+      url "https://github.com/sodadata/soda-cli/releases/download/v0.3.0/sodacli_0.3.0_darwin_arm64.tar.gz"
+      sha256 "f9e582570736541ce24ca50ae5a51ea48f8e5ab84438b20b25842cb7cc1a6972"
 
       define_method(:install) do
         bin.install "sodacli"
@@ -29,15 +29,15 @@ class Sodacli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sodadata/soda-cli/releases/download/v0.2.0/sodacli_0.2.0_linux_amd64.tar.gz"
-      sha256 "7558c8f0ad45cea14cd0609297ed229506bd96fc285b0c5051e444124851bb6c"
+      url "https://github.com/sodadata/soda-cli/releases/download/v0.3.0/sodacli_0.3.0_linux_amd64.tar.gz"
+      sha256 "8d28e92c7cb78aff42c7044aa58c0fb7f0f713411261b9ccd25a1813c2035edb"
       define_method(:install) do
         bin.install "sodacli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sodadata/soda-cli/releases/download/v0.2.0/sodacli_0.2.0_linux_arm64.tar.gz"
-      sha256 "108e9f36fa9d4e6ac431db1567c2c286d55f55f746dd7db158216a4ec92dd508"
+      url "https://github.com/sodadata/soda-cli/releases/download/v0.3.0/sodacli_0.3.0_linux_arm64.tar.gz"
+      sha256 "4fa8beb0d3118a1adb637f67ce6972597bc8c5ac568d490fa7c97d291b9c9e01"
       define_method(:install) do
         bin.install "sodacli"
       end
